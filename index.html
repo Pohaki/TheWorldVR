@@ -24,7 +24,6 @@
       <a-mixin id="Prectangle8" geometry="primitive: box; width:10; height: 0.6; depth: 75;" rotation="0 0 0" material="opacity: 0.8; color:#D1C4E9"></a-mixin>
       <a-mixin id="Pcylinder" geometry="primitive: cylinder; radius:45; height: 0.6;segmentsRadial: 5;" material="opacity: 0.7; color:#FFF59D"></a-mixin>
       <a-mixin id="PrectangleInt" geometry="primitive: box; width:45; height: 0.4; depth: 60;" rotation="0 0 0" material="opacity: 0.8; color:#81D4FA"></a-mixin>
-      <a-mixin id="Pcube" geometry="primitive: box; width:30;height:15; depth:30" material="opacity: 0.8; color:#9575CD"></a-mixin>
       <script id="platform" type="text/x-nunjucks-template">
         <a-entity layout="type: circle; radius: 42" position="0 -0.5 -15">
           <a-entity mixin="Prectangle" rotation="0 90 0"></a-entity>
@@ -70,20 +69,6 @@
           <a-entity mixin="Pcylinder"></a-entity>
           <a-entity mixin="Pcylinder"></a-entity>
           <a-entity mixin="Pcylinder"></a-entity>
-        </a-entity>
-      </script>
-      <script id="platform5" type="text/x-nunjucks-template">
-        <a-entity layout="type: line; margin:40" position="0 0 -20">
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
-          <a-entity mixin="Pcube"></a-entity>
         </a-entity>
       </script>
       <script id="platform23" type="text/x-nunjucks-template">
@@ -441,21 +426,13 @@
       </a-entity>
     </a-entity>
     <a-entity position="400 -300 -500">
-      <a-entity template="src: #platform3" position="5 0 0" rotation="0 30 0 ">
-        <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 30 0" to="0 330 0" repeat="indefinite"></a-animation>
-      </a-entity>
+      <a-entity template="src: #platform3" position="5 0 0" rotation="0 30 0 "></a-entity>
       <a-entity template="src: #platform2" position="0 60 0"></a-entity>
       <a-entity template="src: #platform4" position="0 90 0"></a-entity>
-      <a-entity template="src: #platform3" position="0 120 0">
-        <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 0 0" to="0 -360 0" repeat="indefinite"></a-animation>
-      </a-entity>
-      <a-entity template="src: #platform2" position="5 160 0" rotation="0 30 0 ">
-        <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 30 0" to="0 -330 0" repeat="indefinite"></a-animation>
-      </a-entity>
+      <a-entity template="src: #platform3" position="0 120 0"></a-entity>
+      <a-entity template="src: #platform2" position="5 160 0" rotation="0 30 0 "></a-entity>
       <a-entity template="src: #platform4" position="0 190 0"></a-entity>
-      <a-entity template="src: #platform3" position="5 220 0" rotation="0 30 0 ">
-        <a-animation attribute="rotation" dur="50000" ease="ease-in" from="0 30 0" to="0 330 0" repeat="indefinite"></a-animation>
-      </a-entity>
+      <a-entity template="src: #platform3" position="5 220 0" rotation="0 30 0 "></a-entity>
 
     </a-entity>
     <a-entity position="0 600 0">
@@ -468,17 +445,6 @@
 
     </a-entity>
     <a-entity position="-300 -200 -50">
-      <a-entity position="90 -150 -50">
-        <a-entity template="src: #platform6" data-num="1"></a-entity>
-        <a-entity template="src: #platform7" data-num="1"></a-entity>
-        <a-entity template="src: #platform8" data-num="3"></a-entity>
-        <a-entity template="src: #platform9" data-num="2"></a-entity>
-        <a-entity template="src: #platform10" data-num="3"></a-entity>
-        <a-entity template="src: #platform11" data-num="1"></a-entity>
-        <a-entity template="src: #platform12" data-num="2"></a-entity>
-        <a-entity template="src: #platform13" data-num="3"></a-entity>
-        <a-animation attribute="rotation" dur="70000" ease="ease" from="0 0 0" to="0 360 0" repeat="indefinite"></a-animation>
-      </a-entity>
       <a-entity position="90 130 -60" rotation="180 0 0">
         <a-entity template="src: #platform6" data-num="1"></a-entity>
         <a-entity template="src: #platform7" data-num="1"></a-entity>
@@ -493,16 +459,6 @@
     </a-entity>
     <a-entity position="300 -200 400">
       <a-entity position="90 -150 -50" rotation="900 0 180">
-        <a-entity template="src: #platform6" data-num="1"></a-entity>
-        <a-entity template="src: #platform7" data-num="1"></a-entity>
-        <a-entity template="src: #platform8" data-num="3"></a-entity>
-        <a-entity template="src: #platform9" data-num="2"></a-entity>
-        <a-entity template="src: #platform10" data-num="3"></a-entity>
-        <a-entity template="src: #platform11" data-num="1"></a-entity>
-        <a-entity template="src: #platform12" data-num="2"></a-entity>
-        <a-entity template="src: #platform13" data-num="3"></a-entity>
-      </a-entity>
-      <a-entity position="90 250 -60" rotation="180 0 0">
         <a-entity template="src: #platform6" data-num="1"></a-entity>
         <a-entity template="src: #platform7" data-num="1"></a-entity>
         <a-entity template="src: #platform8" data-num="3"></a-entity>
