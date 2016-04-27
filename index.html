@@ -11,17 +11,21 @@
   </head>
 
   <body>
-    <a-scene fog="type: linear; color: #FFFFFF; far: 1500" entervr="click">
+    <a-scene fog="type: linear; color: #FFFFF; far: 1500" entervr="click">
       <a-assets>
-        <a-mixin id="Prectangle"  position="0 0 -10" geometry="primitive: box; width:5; height: 0.4; depth: 10;" rotation="0 0 0" material="opacity: 0.8; color:#82B1FF" ></a-mixin>
-        <a-mixin id="Prectangle2" geometry="primitive: box; width:36; height: 0.6; depth: 15;" rotation="0 0 0" material="opacity: 0.8; color:#A5D6A7" ></a-mixin>
-        <a-mixin id="Prectangle3"  geometry="primitive: box; width:50; height: 1; depth: 50;" rotation="0 0 0" material="opacity: 0.8; color:#FFAB91" ></a-mixin>
-        <a-mixin id="Prectangle4" geometry="primitive: box; width:36; height: 0.6; depth: 25;" rotation="0 0 0" material="opacity: 0.8; color:#D1C4E9" ></a-mixin>
-        <a-mixin id="Pcylinder" geometry="primitive: cylinder; radius:15; height: 0.6;segmentsRadial: 5;" material="opacity: 0.7; color:#FFF59D"></a-mixin>
-        <a-mixin id="PrectangleInt"  geometry="primitive: box; width:15; height: 0.4; depth: 20;" rotation="0 0 0" material="opacity: 0.8; color:#81D4FA"></a-mixin>
-        <a-mixin id="Pcube" geometry="primitive: box; width:10;height:5; depth:10" material="opacity: 0.8; color:#9575CD"></a-mixin>
+        <a-mixin id="Prectangle"  position="0 0 -10" geometry="primitive: box; width:15; height: 0.4; depth: 30;" rotation="0 0 0" material="opacity: 0.8; color:#82B1FF" ></a-mixin>
+        <a-mixin id="Prectangle2" geometry="primitive: box; width:96; height: 0.6; depth: 45;" rotation="0 0 0" material="opacity: 0.8; color:#A5D6A7" ></a-mixin>
+        <a-mixin id="Prectangle3"  geometry="primitive: box; width:150; height: 1; depth: 150;" rotation="0 0 0" material="opacity: 0.8; color:#FFAB91" ></a-mixin>
+        <a-mixin id="Prectangle4" geometry="primitive: box; width:96; height: 0.6; depth: 75;" rotation="0 0 0" material="opacity: 0.8; color:#D1C4E9" ></a-mixin>
+        <a-mixin id="Prectangle5"  position="0 0 -10" geometry="primitive: box; width:15; height: 50; depth: 30;" rotation="0 0 0" material="opacity: 0.8; color:#9CCC65" ></a-mixin>
+        <a-mixin id="Prectangle6" geometry="primitive: box; width:50; height: 35; depth: 50;" rotation="0 0 0" material="opacity: 0.8; color:#BA68C8" ></a-mixin>
+        <a-mixin id="Prectangle7"  geometry="primitive: box; width:30; height: 1; depth: 150;" rotation="0 0 0" material="opacity: 0.8; color:#FFF9C4" ></a-mixin>
+        <a-mixin id="Prectangle8" geometry="primitive: box; width:10; height: 0.6; depth: 75;" rotation="0 0 0" material="opacity: 0.8; color:#D1C4E9" ></a-mixin>
+        <a-mixin id="Pcylinder" geometry="primitive: cylinder; radius:45; height: 0.6;segmentsRadial: 5;" material="opacity: 0.7; color:#FFF59D"></a-mixin>
+        <a-mixin id="PrectangleInt"  geometry="primitive: box; width:45; height: 0.4; depth: 60;" rotation="0 0 0" material="opacity: 0.8; color:#81D4FA"></a-mixin>
+        <a-mixin id="Pcube" geometry="primitive: box; width:30;height:15; depth:30" material="opacity: 0.8; color:#9575CD"></a-mixin>
         <script id="platform" type="text/x-nunjucks-template">
-        <a-entity layout="type: circle; radius: 14" position="0 -0.5 -15">
+        <a-entity layout="type: circle; radius: 42" position="0 -0.5 -15">
           <a-entity mixin="Prectangle" rotation="0 90 0"></a-entity>
           <a-entity mixin="Prectangle" rotation="0 45 0"></a-entity>
           <a-entity mixin="Prectangle" rotation="0 0 0"></a-entity>
@@ -33,7 +37,7 @@
        </a-entity>
        </script>
        <script id="platform2" type="text/x-nunjucks-template">
-       <a-entity layout="type: circle; radius: 20" position="0 -0.5 -15">
+       <a-entity layout="type: circle; radius: 60" position="0 -0.5 -15">
          <a-entity mixin="Prectangle2" rotation="0 -45 0"></a-entity>
          <a-entity mixin="Prectangle2" rotation="0 45 0"></a-entity>
          <a-entity mixin="Prectangle2" rotation="0 -45 0"></a-entity>
@@ -41,7 +45,7 @@
       </a-entity>
       </script>
       <script id="platform5" type="text/x-nunjucks-template">
-      <a-entity layout="type: circle; radius: 35" position="0 -0.5 -15">
+      <a-entity layout="type: circle; radius: 105" position="0 -0.5 -15">
         <a-entity mixin="Prectangle4" rotation="0 -45 0"></a-entity>
         <a-entity mixin="Prectangle4" rotation="0 45 0"></a-entity>
         <a-entity mixin="Prectangle4" rotation="0 -45 0"></a-entity>
@@ -49,7 +53,7 @@
      </a-entity>
      </script>
       <script id="platform3" type="text/x-nunjucks-template">
-      <a-entity layout="type: circle; radius: 50" position="0 -0.5 -15">
+      <a-entity layout="type: circle; radius: 150" position="0 -0.5 -15">
         <a-entity mixin="Prectangle3" rotation="0 -45 0"></a-entity>
         <a-entity mixin="Prectangle3" rotation="0 45 0"></a-entity>
         <a-entity mixin="Prectangle3" rotation="0 -45 0"></a-entity>
@@ -57,7 +61,7 @@
      </a-entity>
      </script>
      <script id="platform4" type="text/x-nunjucks-template">
-     <a-entity layout="type: circle; radius: 45" position="0 -0.5 -15">
+     <a-entity layout="type: circle; radius: 130" position="0 -0.5 -15">
        <a-entity mixin="Pcylinder" ></a-entity>
        <a-entity mixin="Pcylinder" ></a-entity>
        <a-entity mixin="Pcylinder" ></a-entity>
@@ -81,23 +85,47 @@
       <a-entity mixin="Pcube" ></a-entity>
    </a-entity>
    </script>
+   <script id="platform23" type="text/x-nunjucks-template">
+   <a-entity layout="type: circle; radius: 300" position="0 -0.5 -15">
+     <a-entity mixin="Prectangle6" rotation="0 90 0"></a-entity>
+     <a-entity mixin="Prectangle5" rotation="0 45 0"></a-entity>
+     <a-entity mixin="Prectangle6" rotation="0 0 0"></a-entity>
+     <a-entity mixin="Prectangle5" rotation="0 -45 0"></a-entity>
+     <a-entity mixin="Prectangle6" rotation="0 -90 0"></a-entity>
+     <a-entity mixin="Prectangle5" rotation="0 45 0"></a-entity>
+     <a-entity mixin="Prectangle6" rotation="0 0 0"></a-entity>
+     <a-entity mixin="Prectangle5" rotation="0 -45 0"></a-entity>
+  </a-entity>
+  </script>
+  <script id="platform24" type="text/x-nunjucks-template">
+  <a-entity layout="type: circle; radius: 600" position="0 -0.5 -15">
+    <a-entity mixin="Prectangle7" rotation="0 90 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 45 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 0 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 -45 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 -90 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 45 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 0 0"></a-entity>
+    <a-entity mixin="Prectangle7" rotation="0 -45 0"></a-entity>
+ </a-entity>
+ </script>
    <script id="platform6" type="text/x-nunjucks-template">
    <a-entity layout="type: circle; radius: 36" position="18 0 -15" rotation="0 0 0">
 
    {% for x in range(num) %}
 
    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
-             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
+             material="side: double; color: #00695c; opacity:0.6;"></a-entity>
 
    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
-             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
+             material="side: double; color: #00695c; opacity:0.6;"></a-entity>
 
    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
+             material="side: double; color: #00695c; opacity:0.6;"></a-entity>
 
 
    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
-             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
+             material="side: double; color: #00695c; opacity:0.6;"></a-entity>
 
 
    {% endfor %}
@@ -110,13 +138,13 @@
     {% for x in range(num) %}
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
-              material="side: double; color: #FFF; opacity:0.8;"></a-entity>
+              material="side: double; color: #FFF; opacity:0.6;"></a-entity>
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
-              material="side: double; color: #FF5722; opacity:0.8;"></a-entity>
+              material="side: double; color: #FF5722; opacity:0.6;"></a-entity>
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-              material="side: double; color: #FFF; opacity:0.8;"></a-entity>
+              material="side: double; color: #FFF; opacity:0.6;"></a-entity>
 
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
@@ -181,13 +209,13 @@
     {% for x in range(num) %}
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
-              material="side: double; color: #E91E63; opacity:0.8;"></a-entity>
+              material="side: double; color: #E91E63; opacity:0.6;"></a-entity>
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
-              material="side: double; color: #558B2F; opacity:0.8;"></a-entity>
+              material="side: double; color: #558B2F; opacity:0.6;"></a-entity>
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-              material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+              material="side: double; color: #FFB74D; opacity:0.6;"></a-entity>
 
 
     <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
@@ -204,13 +232,13 @@
         {% for x in range(num) %}
 
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+                  material="side: double; color: #FFB74D; opacity:0.6;"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+                  material="side: double; color: #FFB74D; opacity:0.6;"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+                  material="side: double; color: #FFB74D; opacity:0.6;"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
-                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+                  material="side: double; color: #FFB74D; opacity:0.6;"></a-entity>
 
 
         {% endfor %}
@@ -223,13 +251,13 @@
         {% for x in range(num) %}
 
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
-                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+                  material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
-                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+                  material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
-                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+                  material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
-                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+                  material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
 
 
         {% endfor %}
@@ -243,20 +271,214 @@
         {% for x in range(num) %}
 
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
-                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+                  material="side: double; color: #388E3C;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
-                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+                  material="side: double; color: #388E3C;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
-                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+                  material="side: double; color: #388E3C;opacity:0.6"></a-entity>
         <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
-                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+                  material="side: double; color: #388E3C;opacity:0.6"></a-entity>
 
 
         {% endfor %}
       </a-entity>
     </script>
+    <!-- Platform de droite -->
+<script id="platform14" type="text/x-nunjucks-template">
+<a-entity layout="type: circle; radius: 72" position="18 0 -15" rotation="0 0 0">
+
+{% for x in range(num) %}
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 21; depth: 30" rotation="0 180 0"
+          material="side: double; color: #00695c;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+          material="side: double; color: #00695c;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 0 0"
+          material="side: double; color: #00695c;opacity:0.6"></a-entity>
+
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 12; depth: 30" rotation="0 -90 0"
+          material="side: double; color: #00695c;opacity:0.6"></a-entity>
+
+
+{% endfor %}
+</a-entity>
+</script>
+
+<script id="platform15" type="text/x-nunjucks-template">
+<a-entity layout="type: circle; radius: 36" position="36 18 -15" rotation="0 45 0">
+
+{% for x in range(num) %}
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+          material="side: double; color: #FFF;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+          material="side: double; color: #FF5722;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+          material="side: double; color: #FFF;opacity:0.6"></a-entity>
+
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+          material="side: double; color: #FF5722;opacity:0.6"></a-entity>
+
+
+{% endfor %}
+</a-entity>
+
+</script>
+
+
+<script id="platform16" type="text/x-nunjucks-template">
+<a-entity layout="type: circle; radius: 120" position="18 0 -15" rotation="0 0 0">
+
+{% for x in range(num) %}
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 180 0"
+          material="side: double; color: #FF5B2B;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" position="0 0 90" rotation="0 90 0"
+          material="side: double; color: #B1221C;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 12; depth: 30" rotation="0 0 0"
+          material="side: double; color: #34393E;opacity:0.6"></a-entity>
+
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+          material="side: double; color: #FFDA8C;opacity:0.6"></a-entity>
+
+
+{% endfor %}
+</a-entity>
+</script>
+
+<script id="platform18" type="text/x-nunjucks-template">
+<a-entity layout="type: circle; radius: 108" position="36 12 -15" rotation="0 45 0">
+
+{% for x in range(num) %}
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 12; depth: 30" rotation="0 180 0"
+          material="side: double; color: #01579B;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+          material="side: double; color: #FF8A65;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+          material="side: double; color: #01579B;opacity:0.6"></a-entity>
+
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 -90 0"
+          material="side: double; color: #9C27B0;opacity:0.6"></a-entity>
+
+
+{% endfor %}
+</a-entity>
+</script>
+
+<script id="platform19" type="text/x-nunjucks-template">
+<a-entity layout="type: circle; radius: 96" position="36 6 -15" rotation="0 45 0">
+
+{% for x in range(num) %}
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+          material="side: double; color: #E91E63;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+          material="side: double; color: #558B2F;opacity:0.6"></a-entity>
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 0 0"
+          material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+
+
+<a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+          material="side: double; color: #00695;opacity:0.6C"></a-entity>
+
+
+{% endfor %}
+</a-entity>
+</script>
+
+<script id="platform20" type="text/x-nunjucks-template">
+  <a-entity layout="type: circle; radius: 48" position="36 48 -15" rotation="0 45 0">
+
+    {% for x in range(num) %}
+
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 48; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 48; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 48; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 48; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+
+
+    {% endfor %}
+  </a-entity>
+</script>
+
+<script id="platform21" type="text/x-nunjucks-template">
+  <a-entity layout="type: circle; radius: 108" position="36 24 -15" rotation="0 45 0">
+
+    {% for x in range(num) %}
+
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
+              material="side: double; color: #FFB74D;opacity:0.6"></a-entity>
+
+
+    {% endfor %}
+  </a-entity>
+</script>
+
+
+<script id="platform22" type="text/x-nunjucks-template">
+  <a-entity layout="type: circle; radius: 150" position="36 12 -15" rotation="0 45 0">
+
+    {% for x in range(num) %}
+
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+              material="side: double; color: #388E3C;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
+              material="side: double; color: #388E3C;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
+              material="side: double; color: #388E3C;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
+              material="side: double; color: #388E3C;opacity:0.6"></a-entity>
+
+
+    {% endfor %}
+  </a-entity>
+</script>
+
+<script id="platform22B" type="text/x-nunjucks-template">
+  <a-entity layout="type: circle; radius: 30" position="36 6 -15" rotation="0 45 0">
+
+    {% for x in range(num) %}
+
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+              material="side: double; color: #FFF;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
+              material="side: double; color: #FFF;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
+              material="side: double; color: #FFF;opacity:0.6"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
+              material="side: double; color: #FFF;opacity:0.6"></a-entity>
+
+
+    {% endfor %}
+  </a-entity>
+</script>
        <script id="platformInt" type="text/x-nunjucks-template">
-       <a-entity layout="type: circle; radius: 40" position="15 -4 -6.5">
+       <a-entity layout="type: circle; radius: 120" position="15 -4 -6.5">
          <a-entity mixin="PrectangleInt" rotation="0 90 0"></a-entity>
          <a-entity mixin="PrectangleInt" rotation="0 45 0"></a-entity>
          <a-entity mixin="PrectangleInt" rotation="0 0 0"></a-entity>
@@ -268,26 +490,133 @@
       </a-entity>
       </script>
       </a-assets>
-      <a-entity position="0 -0.5 -150">
-        <a-entity geometry="primitive: cylinder; radius: 6; height: 0.7; segmentsRadial	: 8;" rotation="0 23 0" position="0 -16 -30" material="opacity:0.7; color:#82B1FF;" ></a-entity>
-        <a-entity template="src: #platform" position="0 -15 0"></a-entity>
-        <a-entity geometry="primitive: cylinder; radius: 6; height: 0.7; segmentsRadial	: 8;" rotation="0 23 0" position="0 14 -30" material="opacity:0.7; color:#82B1FF;" ></a-entity>
-        <a-entity template="src: #platform" position="0 15 0"></a-entity>
+      <a-entity position="-300 250 760">
+        <a-entity>
+          <a-entity geometry="primitive: cylinder; radius: 25; height: 0.7; segmentsRadial	: 8;" rotation="0 23 0" position="0 -16 -30" material="opacity:0.7; color:#82B1FF;" ></a-entity>
+          <a-entity template="src: #platform" position="0 -15 0">
+          </a-entity>
+             <a-animation attribute="rotation" dur="100000" ease="ease" from="0 0 0" to="0 360 0" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity>
+          <a-entity geometry="primitive: cylinder; radius: 25; height: 0.7; segmentsRadial	: 8;" rotation="0 23 0" position="0 14 -30" material="opacity:0.7; color:#82B1FF;" ></a-entity>
+          <a-entity template="src: #platform" position="0 15 0"></a-entity>
+        </a-entity>
         <a-entity template="src: #platform5" position="0 40 0"></a-entity>
         <a-entity template="src: #platform5" position="0 -40 0"></a-entity>
-        <a-entity template="src: #platformInt" position="0 -10 0" rotation="0 65 0"></a-entity>
-        <a-entity template="src: #platformInt" position="0 20 0" rotation="0 65 0"></a-entity>
+        <a-entity template="src: #platformInt" position="0 -10 0" rotation="0 65 0">
+          <a-animation attribute="rotation" dur="100000" ease="ease" from="0 65 0" to="0 -295 0" repeat="indefinite"></a-animation>
+
+        </a-entity>
+        <a-entity template="src: #platformInt" position="0 20 0" rotation="0 65 0">
+          <a-animation attribute="rotation" dur="100000" ease="ease" from="0 65 0" to="0 295 0" repeat="indefinite"></a-animation>
+        </a-entity>
       </a-entity>
-      <a-entity position="400 -70 -500" >
-        <a-entity template="src: #platform3" position="5 0 0" rotation="0 30 0 "></a-entity>
-        <a-entity template="src: #platform2" position="0 30 0"></a-entity>
-        <a-entity template="src: #platform4" position="0 50 0"></a-entity>
-        <a-entity template="src: #platform3" position="0 90 0"></a-entity>
-        <a-entity template="src: #platform2" position="5 150 0" rotation="0 30 0 "></a-entity>
-        <a-entity template="src: #platform4" position="0 120 0"></a-entity>
-        <a-entity template="src: #platform3" position="5 180 0" rotation="0 30 0 "></a-entity>
+      <a-entity position="400 -300 -500" >
+        <a-entity template="src: #platform3" position="5 0 0" rotation="0 30 0 ">
+          <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 30 0" to="0 330 0" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity template="src: #platform2" position="0 60 0"></a-entity>
+        <a-entity template="src: #platform4" position="0 90 0"></a-entity>
+        <a-entity template="src: #platform3" position="0 120 0">
+          <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 0 0" to="0 -360 0" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity template="src: #platform2" position="5 160 0" rotation="0 30 0 ">
+          <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 30 0" to="0 -330 0" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity template="src: #platform4" position="0 190 0"></a-entity>
+        <a-entity template="src: #platform3" position="5 220 0" rotation="0 30 0 ">
+          <a-animation attribute="rotation" dur="50000" ease="ease-in" from="0 30 0" to="0 330 0" repeat="indefinite"></a-animation>
+        </a-entity>
+
       </a-entity>
-      <a-entity position="90 100 -80">
+      <a-entity position="0 600 0" >
+        <a-entity template="src: #platform23" position="5 0 0" rotation="0 50 0 "></a-entity>
+      </a-entity>
+      <a-entity position="0 -50 0" >
+        <a-entity template="src: #platform24" position="5 0 0" rotation="0 50 0 ">
+        </a-entity>
+        <a-animation attribute="rotation" dur="100000" ease="ease-in" from="0 50 0" to="0 310 0" repeat="indefinite"></a-animation>
+
+      </a-entity>
+      <a-entity position="-300 -200 -50">
+        <a-entity position="90 -150 -50">
+          <a-entity template="src: #platform6" data-num="1"></a-entity>
+          <a-entity template="src: #platform7" data-num="1"></a-entity>
+          <a-entity template="src: #platform8" data-num="3"></a-entity>
+          <a-entity template="src: #platform9" data-num="2"></a-entity>
+          <a-entity template="src: #platform10" data-num="3"></a-entity>
+          <a-entity template="src: #platform11" data-num="1"></a-entity>
+          <a-entity template="src: #platform12" data-num="2"></a-entity>
+          <a-entity template="src: #platform13" data-num="3"></a-entity>
+          <a-animation attribute="rotation" dur="70000" ease="ease" from="0 0 0" to="0 360 0" repeat="indefinite"></a-animation>
+        </a-entity>
+        <a-entity position="90 130 -60" rotation="180 0 0">
+          <a-entity template="src: #platform6" data-num="1"></a-entity>
+          <a-entity template="src: #platform7" data-num="1"></a-entity>
+          <a-entity template="src: #platform8" data-num="3"></a-entity>
+          <a-entity template="src: #platform9" data-num="2"></a-entity>
+          <a-entity template="src: #platform10" data-num="3"></a-entity>
+          <a-entity template="src: #platform11" data-num="1"></a-entity>
+          <a-entity template="src: #platform12" data-num="2"></a-entity>
+          <a-entity template="src: #platform13" data-num="3"></a-entity>
+          <a-animation attribute="direction" dur="100000" ease="ease" from="90 130 -60" to="90 160 -60" repeat="indefinite"></a-animation>
+        </a-entity>
+      </a-entity>
+      <a-entity position="300 -200 400">
+        <a-entity position="90 -150 -50" rotation="900 0 180">
+          <a-entity template="src: #platform6" data-num="1"></a-entity>
+          <a-entity template="src: #platform7" data-num="1"></a-entity>
+          <a-entity template="src: #platform8" data-num="3"></a-entity>
+          <a-entity template="src: #platform9" data-num="2"></a-entity>
+          <a-entity template="src: #platform10" data-num="3"></a-entity>
+          <a-entity template="src: #platform11" data-num="1"></a-entity>
+          <a-entity template="src: #platform12" data-num="2"></a-entity>
+          <a-entity template="src: #platform13" data-num="3"></a-entity>
+        </a-entity>
+        <a-entity position="90 250 -60" rotation="180 0 0">
+          <a-entity template="src: #platform6" data-num="1"></a-entity>
+          <a-entity template="src: #platform7" data-num="1"></a-entity>
+          <a-entity template="src: #platform8" data-num="3"></a-entity>
+          <a-entity template="src: #platform9" data-num="2"></a-entity>
+          <a-entity template="src: #platform10" data-num="3"></a-entity>
+          <a-entity template="src: #platform11" data-num="1"></a-entity>
+          <a-entity template="src: #platform12" data-num="2"></a-entity>
+          <a-entity template="src: #platform13" data-num="3"></a-entity>
+        </a-entity>
+      </a-entity>
+      <a-entity position="-500 -180 80">
+        <a-entity template="src: #platform14" data-num="2"></a-entity>
+        <a-entity template="src: #platform15" data-num="1"></a-entity>
+        <a-entity template="src: #platform16" data-num="3"></a-entity>
+        <a-entity template="src: #platform17" data-num="3"></a-entity>
+        <a-entity template="src: #platform18" data-num="4"></a-entity>
+        <!-- <a-entity template="src: #platform14" data-num="16"></a-entity> -->
+        <a-entity template="src: #platform20" data-num="2"></a-entity>
+        <a-entity template="src: #platform21" data-num="3"></a-entity>
+        <a-entity template="src: #platform22B" data-num="3"></a-entity>
+      </a-entity>
+      <a-entity position="180 250 150">
+        <a-entity template="src: #platform14" data-num="2"></a-entity>
+        <a-entity template="src: #platform15" data-num="1"></a-entity>
+        <a-entity template="src: #platform16" data-num="3"></a-entity>
+        <a-entity template="src: #platform17" data-num="3"></a-entity>
+        <a-entity template="src: #platform18" data-num="4"></a-entity>
+        <a-entity template="src: #platform19" data-num="16"></a-entity>
+        <a-entity template="src: #platform20" data-num="2"></a-entity>
+        <a-entity template="src: #platform21" data-num="3"></a-entity>
+        <a-entity template="src: #platform22B" data-num="3"></a-entity>
+      </a-entity>
+      <a-entity position="580 150 50">
+        <a-entity template="src: #platform14" data-num="2"></a-entity>
+        <a-entity template="src: #platform15" data-num="1"></a-entity>
+        <a-entity template="src: #platform16" data-num="3"></a-entity>
+        <a-entity template="src: #platform17" data-num="3"></a-entity>
+        <a-entity template="src: #platform18" data-num="4"></a-entity>
+        <a-entity template="src: #platform19" data-num="2"></a-entity>
+        <a-entity template="src: #platform22" data-num="3"></a-entity>
+        <a-entity template="src: #platform22B" data-num="3"></a-entity>
+      </a-entity>
+      <a-entity position="-400 0 390">
         <a-entity template="src: #platform6" data-num="1"></a-entity>
         <a-entity template="src: #platform7" data-num="1"></a-entity>
         <a-entity template="src: #platform8" data-num="3"></a-entity>
