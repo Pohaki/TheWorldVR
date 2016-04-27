@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <a-scene>
+    <a-scene fog="type: linear; color: #FFFFFF; far: 1500" entervr="click">
       <a-assets>
         <a-mixin id="Prectangle"  position="0 0 -10" geometry="primitive: box; width:5; height: 0.4; depth: 10;" rotation="0 0 0" material="opacity: 0.8; color:#82B1FF" ></a-mixin>
         <a-mixin id="Prectangle2" geometry="primitive: box; width:36; height: 0.6; depth: 15;" rotation="0 0 0" material="opacity: 0.8; color:#A5D6A7" ></a-mixin>
@@ -82,22 +82,22 @@
    </a-entity>
    </script>
    <script id="platform6" type="text/x-nunjucks-template">
-   <a-entity layout="type: circle; radius: 6" position="0 0 -15" rotation="0 0 0">
+   <a-entity layout="type: circle; radius: 36" position="18 0 -15" rotation="0 0 0">
 
    {% for x in range(num) %}
 
-   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 180 0"
-             material="side: double; color: #00695c"></a-entity>
+   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
 
-   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 90 0"
-             material="side: double; color: #00695c"></a-entity>
+   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
 
-   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-             material="side: double; color: #00695c"></a-entity>
+   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
 
 
-   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 -90 0"
-             material="side: double; color: #00695c"></a-entity>
+   <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+             material="side: double; color: #00695c; opacity:0.8;"></a-entity>
 
 
    {% endfor %}
@@ -105,21 +105,21 @@
    </script>
 
     <script id="platform7" type="text/x-nunjucks-template">
-    <a-entity layout="type: circle; radius: 6" position="6 3 -15" rotation="0 45 0">
+    <a-entity layout="type: circle; radius: 36" position="32 18 -15" rotation="0 45 0">
 
     {% for x in range(num) %}
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 180 0"
-              material="side: double; color: #FFF"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+              material="side: double; color: #FFF; opacity:0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 90 0"
-              material="side: double; color: #FF5722"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+              material="side: double; color: #FF5722; opacity:0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-              material="side: double; color: #FFF"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFF; opacity:0.8;"></a-entity>
 
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 -90 0"
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
               material="side: double; color: #FF5722"></a-entity>
 
 
@@ -130,22 +130,22 @@
 
 
     <script id="platform8" type="text/x-nunjucks-template">
-    <a-entity layout="type: circle; radius: 16" position="0 0 -15" rotation="0 0 0">
+    <a-entity layout="type: circle; radius: 90" position="18 0 -15" rotation="0 0 0">
 
     {% for x in range(num) %}
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 180 0"
-              material="side: double; color: #FF5B2B"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+              material="side: double; color: #FF5B2B; opacity: 0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" position="0 0 90" rotation="0 90 0"
-              material="side: double; color: #B1221C"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" position="0 0 90" rotation="0 90 0"
+              material="side: double; color: #B1221C; opacity: 0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-              material="side: double; color: #34393E"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #34393E; opacity: 0.8;"></a-entity>
 
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 -90 0"
-              material="side: double; color: #FFDA8C"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+              material="side: double; color: #FFDA8C; opacity: 0.8;"></a-entity>
 
 
     {% endfor %}
@@ -153,22 +153,22 @@
     </script>
 
     <script id="platform9" type="text/x-nunjucks-template">
-    <a-entity layout="type: circle; radius: 8" position="6 2 -15" rotation="0 45 0">
+    <a-entity layout="type: circle; radius: 70" position="32 12 -15" rotation="0 45 0">
 
     {% for x in range(num) %}
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 180 0"
-              material="side: double; color: #01579B"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+              material="side: double; color: #01579B; opacity: 0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 90 0"
-              material="side: double; color: #FF8A65"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+              material="side: double; color: #FF8A65; opacity: 0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-              material="side: double; color: #01579B"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #01579B; opacity: 0.8;"></a-entity>
 
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 -90 0"
-              material="side: double; color: #9C27B0"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
+              material="side: double; color: #9C27B0; opacity: 0.8;"></a-entity>
 
 
     {% endfor %}
@@ -176,21 +176,21 @@
     </script>
 
     <script id="platform10" type="text/x-nunjucks-template">
-    <a-entity layout="type: circle; radius: 12" position="6 1 -15" rotation="0 45 0">
+    <a-entity layout="type: circle; radius: 72" position="32 6 -15" rotation="0 45 0">
 
     {% for x in range(num) %}
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 180 0"
-              material="side: double; color: #E91E63"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 180 0"
+              material="side: double; color: #E91E63; opacity:0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 90 0"
-              material="side: double; color: #558B2F"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 90 0"
+              material="side: double; color: #558B2F; opacity:0.8;"></a-entity>
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-              material="side: double; color: #FFB74D"></a-entity>
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+              material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
 
 
-    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 -90 0"
+    <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 -90 0"
               material="side: double; color: #00695C"></a-entity>
 
 
@@ -199,18 +199,18 @@
     </script>
 
     <script id="platform11" type="text/x-nunjucks-template">
-      <a-entity layout="type: circle; radius: 1" position="6 4 -15" rotation="0 45 0">
+      <a-entity layout="type: circle; radius: 6" position="36 24 -15" rotation="0 45 0">
 
         {% for x in range(num) %}
 
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 3; depth: 5" rotation="0 0 0"
-                  material="side: double; color: #FFB74D"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 18; depth: 30" rotation="0 0 0"
+                  material="side: double; color: #FFB74D; opacity:0.8;"></a-entity>
 
 
         {% endfor %}
@@ -218,18 +218,18 @@
     </script>
 
     <script id="platform12" type="text/x-nunjucks-template">
-      <a-entity layout="type: circle; radius: 18" position="6 4 -15" rotation="0 45 0">
+      <a-entity layout="type: circle; radius: 108" position="36 24 -15" rotation="0 45 0">
 
         {% for x in range(num) %}
 
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 90 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 5; depth: 5" rotation="0 60 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 60 0"
-                  material="side: double; color: #FFB74D"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 140 0"
-                  material="side: double; color: #FFB74D"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
+                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
+                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
+                  material="side: double; color: #FFB74D;opacity:0.8"></a-entity>
 
 
         {% endfor %}
@@ -238,18 +238,18 @@
 
 
     <script id="platform13" type="text/x-nunjucks-template">
-      <a-entity layout="type: circle; radius: 18" position="6 2 -15" rotation="0 45 0">
+      <a-entity layout="type: circle; radius: 108" position="36 12 -15" rotation="0 45 0">
 
         {% for x in range(num) %}
 
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 90 0"
-                  material="side: double; color: #388E3C"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 5; depth: 5" rotation="0 60 0"
-                  material="side: double; color: #388E3C"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 60 0"
-                  material="side: double; color: #388E3C"></a-entity>
-        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 1; depth: 5" rotation="0 140 0"
-                  material="side: double; color: #388E3C"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 90 0"
+                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 30; depth: 30" rotation="0 60 0"
+                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 60 0"
+                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
+        <a-entity geometry="primitive: box; openEnded: false; thetaLength: 180; height: 0.3; width: 6; depth: 30" rotation="0 140 0"
+                  material="side: double; color: #388E3C;opacity:0.8"></a-entity>
 
 
         {% endfor %}
@@ -287,7 +287,7 @@
         <a-entity template="src: #platform4" position="0 120 0"></a-entity>
         <a-entity template="src: #platform3" position="5 180 0" rotation="0 30 0 "></a-entity>
       </a-entity>
-      <a-entity position="0 0 0">
+      <a-entity position="90 100 -80">
         <a-entity template="src: #platform6" data-num="1"></a-entity>
         <a-entity template="src: #platform7" data-num="1"></a-entity>
         <a-entity template="src: #platform8" data-num="3"></a-entity>
@@ -322,7 +322,7 @@
 
       <a-entity id="me" camera position="0 20 100"
                      look-controls
-                     gamepad-controls="acceleration: 300"
+                     gamepad-controls="acceleration: 2000"
                      keyboard-controls="fly:true;acceleration:300"
                      wasd-controls="fly:true;acceleration:3000"
                      ></a-entity>
