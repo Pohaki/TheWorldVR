@@ -7,8 +7,6 @@
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-template-component/master/dist/aframe-template-component.min.js"></script>
-  <script src="https://cdn.rawgit.com/donmccurdy/aframe-keyboard-controls/v0.2.3/dist/aframe-keyboard-controls.js"></script>
-  <script src="https://cdn.rawgit.com/donmccurdy/aframe-proxy-controls/v0.5.5/dist/aframe-proxy-controls.min.js"></script>
   <script src="js/aframe-gamepad-control.js"></script>
 
 </head>
@@ -409,9 +407,9 @@
           <a-entity mixin="PrectangleInt" rotation="0 -45 0"></a-entity>
         </a-entity>
       </script>
-      <audio id="theme_kh" src="theme_kh.mp3"></audio>
-      <audio id="iron" src="iron.mp3"></audio>
-      <audio id="the_cell" src="the_cell.mp3"></audio>
+      <audio id="theme_kh" src="theme_kh.mp3">
+      <audio id="iron" src="iron.mp3">
+      <audio id="the_cell" src="the_cell.mp3">
 
     </a-assets>
     <a-entity position="-300 250 760" >
@@ -540,40 +538,7 @@
       </a-entity>
     </a-entity>
 
-    <a-scene>
-        <a-entity position="0 -50 -15">
-              <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength:320;height:20;radius:1000" material="side: double;color:#57FDFF; opacity:0.5;" position="-2 10 -2">
-                  <a-animation attribute="rotation" dur="15000" easing="linear" repeat="indefinite" to="0 360 0"></a-animation>
-              </a-entity>
-
-              <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength:-300;height:20;radius:1000" material="side: double;color:#D700F3; opacity:0.5;" position="-2 40 -2">
-                  <a-animation attribute="rotation" dur="10000" easing="linear" repeat="indefinite" to="0 -360 0"></a-animation>
-              </a-entity>
-
-              <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength:280;height:20;radius:1000" material="side: double;color:#F9FF02; opacity:0.5;" position="-2 80 -2">
-                  <a-animation attribute="rotation" dur="9000" easing="linear" repeat="indefinite" to="0 360 0"></a-animation>
-              </a-entity>
-
-              <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength:300;height:20;radius:1000" material="side: double;color:#02DE06; opacity:0.5;" position="-2 120 -2">
-                  <a-animation attribute="rotation" dur="14000" easing="linear" repeat="indefinite" to="0 360 0"></a-animation>
-              </a-entity>
-
-              <a-entity geometry="primitive: cylinder; openEnded: true; thetaLength:-280;height:20;radius:1000" material="side: double;color:#E40002; opacity:0.5;" position="-2 160 -2">
-                  <a-animation attribute="rotation" dur="18000" easing="linear" repeat="indefinite" to="0 -360 0"></a-animation>
-              </a-entity>
-          </a-entity>
-
-          <a-entity camera position="0 20 100"
-                       look-controls
-                       gamepad-controls="acceleration: 300"
-                       keyboard-controls="fly:true;acceleration:3000"
-                       sound="src: chubaka.mp3;
-                              on: gamepadbuttondown:17"
-                      sound="src: laser.mp3;
-                             on: gamepadbuttondown:0">
-        </a-entity>
-        <a-sky color="#FAFAFA"></a-sky>
-      </a-scene>
+    <a-entity id="me" camera position="0 20 100" look-controls gamepad-controls="acceleration: 1300" keyboard-controls="fly:true;acceleration:300" wasd-controls="fly:true;acceleration:3000"></a-entity>
 
     <a-sky color="#FAFAFA"></a-sky>
   </a-scene>
