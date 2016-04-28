@@ -411,7 +411,8 @@
       <audio id="theme_kh" src="theme_kh.mp3">
       <audio id="iron" src="iron.mp3">
       <audio id="the_cell" src="the_cell.mp3">
-        <audio id="untitled02" src="untitled02.mp3">
+      <audio id="untitled02" src="untitled02.mp3">
+      <audio id="emancipator" src="Emancipator.mp3">
     </a-assets>
     <a-entity position="-300 250 760" >
       <a-entity>
@@ -459,7 +460,6 @@
         <a-entity template="src: #platform11" data-num="1"></a-entity>
         <a-entity template="src: #platform12" data-num="2"></a-entity>
         <a-entity template="src: #platform13" data-num="3"></a-entity>
-        <a-animation attribute="direction" dur="100000" ease="ease" from="90 130 -60" to="90 160 -60" repeat="indefinite"></a-animation>
       </a-entity>
     </a-entity>
     <a-entity position="300 -200 400">
@@ -471,7 +471,7 @@
         <a-entity template="src: #platform10" data-num="3"></a-entity>
         <a-entity template="src: #platform11" data-num="1"></a-entity>
         <a-entity template="src: #platform12" data-num="2"></a-entity>
-        <a-entity template="src: #platform13" data-num="3"></a-entity>
+        <a-entity template="src: #platform13" sound="src: theme_kh.mp3; autoplay:true; loop:true;" data-num="3"></a-entity>
       </a-entity>
     </a-entity>
     <a-entity position="-500 -180 80">
