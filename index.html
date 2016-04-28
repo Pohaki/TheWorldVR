@@ -7,6 +7,8 @@
   <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
   <script src="https://rawgit.com/ngokevin/aframe-template-component/master/dist/aframe-template-component.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-keyboard-controls/v0.2.3/dist/aframe-keyboard-controls.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-proxy-controls/v0.5.5/dist/aframe-proxy-controls.min.js"></script>
   <script src="js/aframe-gamepad-control.js"></script>
 
 </head>
@@ -407,7 +409,7 @@
           <a-entity mixin="PrectangleInt" rotation="0 -45 0"></a-entity>
         </a-entity>
       </script>
-      <audio id="theme_kh" src="theme_kh.mp3">
+      <audio id="theme_kh" src="theme_kh.mp3"></audio>
     </a-assets>
     <a-entity position="-300 250 760" >
       <a-entity>
@@ -535,7 +537,11 @@
       </a-entity>
     </a-entity>
 
-    <a-entity id="me" camera position="0 20 100" look-controls gamepad-controls="acceleration: 1000" keyboard-controls="fly:true;acceleration:300" wasd-controls="fly:true;acceleration:3000"></a-entity>
+    <a-entity id="me"
+    camera position="0 20 100"
+    look-controls gamepad-controls="acceleration: 300"
+    keyboard-controls="fly:true;acceleration:300">
+    </a-entity>
 
     <a-sky color="#FAFAFA"></a-sky>
   </a-scene>
